@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GrandKidsFestival.NewUserPageController">
+   <children>
+      <Label layoutX="67.0" layoutY="39.0" prefHeight="64.0" prefWidth="467.0" text="New Family Registration">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="back" layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#drawMainMenu" text="&lt; Back" />
+      <TextField fx:id="fName" layoutX="107.0" layoutY="121.0" prefHeight="25.0" prefWidth="161.0" />
+      <Label layoutX="42.0" layoutY="125.0" prefHeight="17.0" prefWidth="65.0" text="First Name" />
+      <TextField fx:id="lName" layoutX="411.0" layoutY="121.0" />
+      <Label layoutX="347.0" layoutY="125.0" prefHeight="17.0" prefWidth="65.0" text="Last Name" />
+      <TextField fx:id="address" layoutX="107.0" layoutY="159.0" prefHeight="25.0" prefWidth="161.0" />
+      <Label layoutX="49.0" layoutY="163.0" prefHeight="17.0" prefWidth="52.0" text="Address" />
+      <TextField fx:id="city" layoutX="300.0" layoutY="159.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="278.0" layoutY="163.0" prefHeight="17.0" prefWidth="27.0" text="City" />
+      <TextField fx:id="mi" layoutX="296.0" layoutY="121.0" prefHeight="25.0" prefWidth="35.0" />
+      <Label layoutX="277.0" layoutY="125.0" prefHeight="17.0" prefWidth="17.0" text="MI" />
+      <Label layoutX="396.0" layoutY="163.0" prefHeight="17.0" prefWidth="17.0" text="ST" />
+      <ChoiceBox fx:id="st" layoutX="413.0" layoutY="159.0" prefHeight="25.0" prefWidth="35.0" />
+      <Label layoutX="455.0" layoutY="163.0" prefHeight="17.0" prefWidth="17.0" text="ZIP" />
+      <TextField fx:id="zip" layoutX="479.0" layoutY="159.0" prefHeight="25.0" prefWidth="81.0" />
+      <Label layoutX="58.0" layoutY="198.0" text="Phone" />
+      <TextField fx:id="phone" layoutX="107.0" layoutY="194.0" prefHeight="25.0" prefWidth="131.0" />
+      <TextField fx:id="email" layoutX="305.0" layoutY="195.0" prefHeight="25.0" prefWidth="131.0" />
+      <Label layoutX="271.0" layoutY="198.0" text="Email" />
+      <Label layoutX="159.0" layoutY="242.0" text="Username" />
+      <Label layoutX="161.0" layoutY="271.0" text="Password" />
+      <TextField fx:id="userid" layoutX="236.0" layoutY="238.0" />
+      <Button fx:id="submit" alignment="CENTER" layoutX="239.0" layoutY="339.0" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="123.0" text="Submit" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="236.0" layoutY="267.0" />
+      <PasswordField fx:id="confirmPassword" layoutX="236.0" layoutY="298.0" />
+      <Label layoutX="123.0" layoutY="302.0" text="Confirm Password" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GrandKidsFestival.loginController">
+   <children>
+      <Label layoutX="76.0" layoutY="63.0" prefHeight="69.0" prefWidth="450.0" text="Returning User Login">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="157.0" text="Username">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="196.0" text="Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="280.0" layoutY="199.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="username" layoutX="280.0" layoutY="163.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="247.0" layoutY="269.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="107.0" text="Login">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#drawMainMenu" text="&lt; Back" />
+   </children>
+</AnchorPane>
